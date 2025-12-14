@@ -1,0 +1,8 @@
+1. How does your program detect a button press and trigger the game loop?
+  The program uses a "pause()" function to detect when a button is pressed and released to trigger a "touched()" function which runs the code.
+2. If I ran the slot machine 1000 times and graphed the results on a number line, would the results look like? What would they look like for your rigged version?
+  If the program was ran 1000 times the results would be varied, there is a 20% chance of winning so there would be about 200 instances of winning. In the rigged version it would be a 100% win rate, a straight horizontal line.
+3. How did you use randomness in your program? Was it truly random? How could you test it?
+  I utilized the random library, using random.randint() and random.random() to decide numbers and determine jackpots. It isn't truly random, its Pseudo-random. I could run it a certain amount of times and look at the pattern.
+4. How did you guarantee the results would favor winning? How did you change your game logic to accomplish this?
+  I created a global variable called jackpot that would force all 4 digits to match when true. The logic selects a random decmial from random.random() to match a variable called "jackpot_chance," The jackpot chance was set to 0.8 so if the jackpot was greater than or equal to 0.8, It would set the jackpot variable to True.
